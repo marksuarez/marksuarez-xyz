@@ -1,0 +1,77 @@
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    @include border-radius();
+}
+
+.page-item {
+    &:first-child {
+        .page-text,
+        .page-link {
+            margin-left: 0;
+            @include border-start-radius($pagination-border-radius);
+        }
+    }
+    &:last-child {
+        .page-text,
+        .page-link {
+            @include border-end-radius($pagination-border-radius);
+        }
+    }
+}
+
+.page-text,
+.page-link {
+    display: block;
+    padding: $pagination-padding-y $pagination-padding-x;
+    margin-left: -$pagination-border-width;
+    line-height: $pagination-line-height;
+    background-color: $pagination-bg;
+    border: $pagination-border-width solid $pagination-border-color;
+}
+
+.page-link {
+    position: relative;
+    color: $pagination-color;
+    text-decoration: none;
+
+    &:hover {
+        z-index: 1;
+        color: $pagination-hover-color;
+        text-decoration: none;
+        background-color: $pagination-hover-bg;
+        border-color: $pagination-hover-border;
+    }
+
+    &.active {
+        z-index: 1;
+        color: $pagination-active-color;
+        background-color: $pagination-active-bg;
+    }
+
+    &:focus {
+        z-index: 2;
+    }
+
+    &.disabled {
+        color: $pagination-disabled-color;
+        pointer-events: none;
+        cursor: $cursor-disabled;
+        background-color: $pagination-disabled-bg;
+    }
+}
+
+// Sizing
+@if $enable-sizing {
+    @each $size, $dims in $component-sizes {
+        $sz-font-size:     map-get($dims, "font-size");
+        $sz-padding-y:     map-get($dims, "padding-y");
+        $sz-padding-x:     map-get($dims, "padding-x");
+        $sz-border-radius: map-get($dims, "border-radius");
+
+        .pagination-#{$size} {
+            @include pagination-size($sz-padding-y, $sz-padding-x, $sz-font-size, $sz-border-radius);
+        }
+    }
+}

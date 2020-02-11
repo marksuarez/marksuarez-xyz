@@ -1,0 +1,67 @@
+// Form validation states
+//
+// Used in _forms.scss to generate the form validation CSS for warnings, errors,
+// and successes.
+
+@mixin form-control-validation($color-name) {
+    $color:        palette-context($color-name);
+    $bg:           palette-context($color-name, $level-context-bg);
+    $border:       palette-context($color-name, $level-context-border);
+    $border-hover: palette-context($color-name, $level-context-hover-border);
+
+    // Color the label and help text
+    .form-control-feedback,
+    .form-control-label,
+    .form-check-label,
+    .custom-control {
+        color: $color;
+    }
+    // Set the border and box shadow on specific inputs to match
+    .form-control,
+    .custom-select,
+    .custom-file-control {
+        border-color: $border;
+
+        &:focus {
+            border-color: $border-hover;
+            @if ($enable-shadows) {
+                box-shadow: $input-focus-box-shadow-inner, $input-focus-box-shadow-outer;
+            } @else {
+                box-shadow: $input-focus-box-shadow-outer;
+            }
+        }
+    }
+
+    // Set validation states also for addons
+    .input-group-addon {
+        color: $color;
+        background-color: $bg;
+        border-color: $color;
+    }
+}
+
+// Form control focus state
+//
+// Generate a customized focus state and for any input with the specified color,
+// which defaults to the `@input-border-focus` variable.
+//
+// We highly encourage you to not customize the default value, but instead use
+// this to tweak colors on an as-needed basis. This aesthetic change is based on
+// WebKit's default styles, but applicable to a wider range of browsers. Its
+// usability and accessibility should be taken into account with any change.
+//
+// Example usage: change the default blue border and shadow to white for better
+// contrast against a dark gray background.
+@mixin form-control-focus() {
+    &:focus {
+        color: $input-focus-color;
+        background-color: $input-focus-bg;
+        border-color: $input-focus-border-color;
+        outline: 0;
+        @if ($enable-shadows) {
+            box-shadow: $input-focus-box-shadow-inner, $input-focus-box-shadow-outer;
+        } @else {
+            box-shadow: $input-focus-box-shadow-outer;
+        }
+    }
+}

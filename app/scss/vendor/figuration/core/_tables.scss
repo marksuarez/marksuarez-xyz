@@ -1,0 +1,185 @@
+// Basic table
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: $table-margin-bottom;
+    background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+
+    th,
+    td {
+        padding: $table-cell-padding;
+        vertical-align: top;
+        border-top: $table-border-width solid $table-border-color;
+    }
+
+    thead th {
+        vertical-align: bottom;
+        border-bottom: (2 * $table-border-width) solid $table-border-color;
+    }
+
+    tbody + tbody {
+        border-top: (2 * $table-border-width) solid $table-border-color;
+    }
+
+    tfoot {
+        th,
+        td {
+            border-top: (2 * $table-border-width) solid $table-border-color;
+        }
+    }
+
+    .table {
+        background-color: $table-bg;
+    }
+}
+
+
+// Condensed table
+.table-condensed {
+    th,
+    td {
+        padding: $table-condensed-cell-padding;
+    }
+}
+
+// Bordered table
+.table-bordered {
+    border: $table-border-width solid $table-border-color;
+
+    th,
+    td {
+        border: $table-border-width solid $table-border-color;
+    }
+
+    thead {
+        th,
+        td {
+            border-bottom-width: (2 * $table-border-width);
+        }
+    }
+
+    tfoot {
+        th,
+        td {
+            border-top-width: (2 * $table-border-width);
+        }
+    }
+}
+
+// Borderless table
+.table-borderless {
+    th,
+    td {
+        border: 0;
+    }
+}
+
+// Table with no borders
+.table-noborder {
+    th,
+    td {
+        border: 0;
+    }
+
+    thead,
+    tfoot {
+        th,
+        td {
+            border: 0;
+        }
+    }
+}
+
+// Striped table
+.table-striped {
+    tbody tr:nth-of-type(odd) {
+        background-color: $table-bg-accent;
+    }
+
+    &.table-inverse tbody tr:nth-of-type(odd) {
+        background-color: $table-inverse-bg-accent;
+    }
+}
+
+
+// Hover effect
+// Needs to be after striped table in order to overrule background
+.table-hover {
+    tbody tr {
+        @include hover {
+            background-color: $table-bg-hover;
+        }
+    }
+
+    &.table-inverse tbody tr {
+        @include hover {
+            background-color: $table-inverse-bg-hover;
+        }
+    }
+}
+
+
+// Table backgrounds
+// Active variant
+@include table-row-variant(active, $table-bg-active, $table-bg-active-hover);
+
+// Contextual variants
+@each $theme, $colors in $context-themes {
+    $bg:       map-get($colors, "context-bg");
+    $hover-bg: map-get($colors, "context-hover-bg");
+
+    @include table-row-variant("#{$theme}", $bg, $hover-bg);
+}
+
+
+// Scrolling table
+// Add `.table-scroll` to table to enable horizontal scrolling.
+// Tables will scroll when they will no longer fit width-wise in their container.
+.table-scroll {
+    @include table-scroll();
+}
+
+// Responsive scrolling table
+@each $bp in map-keys($grid-breakpoints) {
+    $bprule: breakpoint-designator($bp);
+
+    // Skip largest breakpoint for down (equivalent to `.table-scroll`)
+    @if breakpoint-max($bp, $grid-breakpoints) != null {
+        .table-scroll-#{$bp}-down {
+            @include media-breakpoint-down($bp) {
+                @include table-scroll();
+            }
+        }
+    }
+}
+
+// Table color variants
+.thead-inverse,
+.tfoot-inverse {
+    th {
+        color: $table-inverse-color;
+        background-color: $table-inverse-bg;
+    }
+}
+.thead-default,
+.tfoot-default {
+    th {
+        color: $table-head-color;
+        background-color: $table-head-bg;
+    }
+}
+.table-inverse {
+    color: $table-inverse-color;
+    background-color: $table-inverse-bg;
+
+    &.table-bordered {
+        border: 0;
+    }
+
+    th,
+    td,
+    thead th,
+    tfoot th {
+        border-color: $table-inverse-border;
+    }
+}

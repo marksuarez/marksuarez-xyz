@@ -1,0 +1,295 @@
+.card {
+    position: relative;
+    display: block;
+    min-width: 0;
+    margin-bottom: $card-spacer-y;
+    word-wrap: break-word;
+    background-color: $card-bg;
+    border: $card-border-width solid $card-border-color;
+    @include border-radius($card-border-radius);
+
+    // Remove some margin spacing
+    .list-group {
+        margin-bottom: 0;
+    }
+
+    .list-group-flush .list-group-item {
+        border-right-width: 0;
+        border-left-width: 0;
+    }
+
+    > .list-group:first-child {
+        .list-group-item:first-child {
+            border-top-width: 0;
+            @if $enable-rounded {
+                @include border-top-radius($card-border-radius);
+            }
+        }
+    }
+
+    > .list-group:last-child {
+        .list-group-item:last-child {
+            border-bottom-width: 0;
+            @if $enable-rounded {
+                @include border-bottom-radius($card-border-radius);
+            }
+        }
+    }
+
+    > hr {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.card-body {
+    padding: $card-padding-y $card-padding-x;
+}
+
+.card-title {
+    margin-bottom: $card-spacer-y;
+}
+
+.card-subtitle {
+    margin-top: -($card-spacer-y / 2);
+    margin-bottom: 0;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.card-link + .card-link {
+    margin-left: $card-spacer-x;
+}
+
+// Optional textual caps
+.card-header {
+    padding: $card-cap-padding-y $card-cap-padding-x;
+    margin-bottom: 0; // Removes the default margin-bottom of <hN>
+    color: $card-cap-color;
+    background-color: $card-cap-bg;
+    border-bottom: $card-border-width solid $card-border-color;
+
+    &:first-child {
+        @include border-radius($card-border-radius $card-border-radius 0 0);
+    }
+
+    + .list-group {
+        .list-group-item:first-child {
+            border-top-width: 0;
+        }
+    }
+}
+
+.card-footer {
+    padding: $card-cap-padding-y $card-cap-padding-x;
+    color: $card-cap-color;
+    background-color: $card-cap-bg;
+    border-top: $card-border-width solid $card-border-color;
+
+    &:last-child {
+        @include border-radius(0 0 $card-border-radius $card-border-radius);
+    }
+}
+
+// Header navs
+.card-header-tabs {
+    margin-right: -($card-cap-padding-x / 2);
+    margin-bottom: -$card-cap-padding-y;
+    margin-left: -($card-cap-padding-x / 2);
+    border-bottom: 0;
+}
+.card-header-pills {
+    margin-right: -($card-cap-padding-x / 2);
+    margin-left: -($card-cap-padding-x / 2);
+}
+
+// Background variations
+@each $theme, $colors in $context-themes {
+    $bg:        map-get($colors, "control-bg");
+    $border:    map-get($colors, "control-border");
+
+    .card-#{$theme} {
+        @include card-variant($bg, $border);
+    }
+}
+
+// Remove all backgrounds
+@each $theme, $colors in $context-themes {
+    $border: map-get($colors, "context-border");
+
+    .card-outline-#{$theme} {
+        @include card-outline-variant($border);
+    }
+}
+
+// Inverse text within a card for use with dark backgrounds
+.card-inverse {
+    @include card-inverse;
+}
+
+// Card image overlay
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: $card-img-overlay-padding;
+}
+
+// Card images
+.card-img {
+    @include border-radius($card-inner-border-radius);
+}
+.card-img-top {
+    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+}
+.card-img-bottom {
+    @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
+}
+
+
+// Card deck
+// 1. Individual cards have margin-bottom by default.
+//    Replace with single margin on the deck.
+%card-deck-base {
+    display: flex;
+    flex-direction: column;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    $bprule: breakpoint-designator($breakpoint);
+
+    .card-deck#{$bprule} {
+        @extend %card-deck-base;
+
+        @include media-breakpoint-up(#{$breakpoint}) {
+            flex-flow: row wrap;
+            margin-bottom: $card-spacer-y; // 1
+
+            > .card {
+                // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored
+                flex: 1 0 0%;
+                margin-bottom: 0; // 1
+            }
+        }
+    }
+}
+
+// Card deck gutters
+@each $breakpoint, $gutter in $card-deck-gutter-widths {
+    @include check-gutter-change($breakpoint, $card-deck-gutter-widths) {
+        @include media-breakpoint-up($breakpoint) {
+            %card-deck-gutter {
+                margin-right: -($gutter / 2);
+                margin-left: -($gutter / 2);
+
+                > .card {
+                    margin-right: ($gutter / 2);
+                    margin-left: ($gutter / 2);
+                }
+            }
+        }
+
+        @each $bp-inner in map-keys($grid-breakpoints) {
+            $bprule-inner: breakpoint-designator($bp-inner);
+            .card-deck#{$bprule-inner} {
+                @extend %card-deck-gutter;
+            }
+        }
+    }
+}
+
+
+// Card group
+// 1. Individual cards have margin-bottom by default,
+//    Replace with single margin on the group.
+%card-group-base {
+    display: flex;
+    flex-direction: column;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    $bprule: breakpoint-designator($breakpoint);
+
+    .card-group#{$bprule} {
+        @extend %card-group-base;
+
+        @include media-breakpoint-up(#{$breakpoint}) {
+            flex-flow: row wrap;
+            margin-bottom: $card-spacer-y; // 1
+
+            > .card {
+                // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored
+                flex: 1 0 0%;
+                margin-bottom: 0; // 1
+
+                + .card {
+                    margin-left: 0;
+                    border-left: 0;
+                }
+
+                // Handle rounded corners
+                @if $enable-rounded {
+                    &:first-child:not(:only-child) {
+                        @include border-end-radius(0);
+
+                        .card-img-top,
+                        .card-header {
+                            @include border-top-end-radius(0);
+                        }
+                        .card-img-bottom,
+                        .card-footer {
+                            @include border-bottom-end-radius(0);
+                        }
+                    }
+                    &:last-child:not(:only-child) {
+                        @include border-start-radius(0);
+
+                        .card-img-top,
+                        .card-header {
+                            @include border-top-start-radius(0);
+                        }
+                        .card-img-bottom,
+                        .card-footer {
+                            @include border-bottom-start-radius(0);
+                        }
+                    }
+                    &:not(:first-child):not(:last-child):not(:only-child) {
+                        @include border-radius(0);
+
+                        .card-img-top,
+                        .card-img-bottom,
+                        .card-header,
+                        .card-footer {
+                            @include border-radius(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Card columns
+// If using `display: block;` on child cards - encounter problem with bottom margin being applied in the next column sometimes
+// https://bugs.chromium.org/p/chromium/issues/detail?id=440362
+@each $breakpoint in map-keys($grid-breakpoints) {
+    $bprule: breakpoint-designator($breakpoint);
+
+    @include media-breakpoint-up(#{$breakpoint}) {
+        .card-columns#{$bprule} {
+            column-count: $card-columns-count;
+            column-gap: $card-columns-column-gap;
+
+            > .card {
+                display: inline-table;
+                width: 100%; // Don't let them exceed the column width
+                break-inside: avoid;
+            }
+        }
+    }
+}

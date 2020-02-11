@@ -1,0 +1,92 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$breakpoints:
+  sm 48em 46rem, //768
+  md 62em 61rem, //992
+  lg 75em 71rem, //1200
+  xl 100em 94rem, //1600
+  xx 120em 112rem; //1920
+
+
+// Breakpoints
+$bp-sm    	: "min-width: 48em" !default;
+$bp-md   	: "min-width: 62em" !default;
+$bp-lg    	: "min-width: 75em" !default;
+$bp-xl  	: "min-width: 100em" !default;
+$bp-xx	 	: "min-width: 120em" !default;
+
+// Media Queries
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Note: The best way to structure the use of media queries is to create the queries
+// near the relevant code. For example, if you wanted to change the styles for buttons
+// on small devices, paste the mobile query code up in the buttons section and style it
+// there.
+
+// Larger than mobile
+@media (#{$bp-sm}) {}
+
+// Larger than phablet (also point when grid becomes active)
+@media (#{$bp-md}) {}
+
+// Larger than tablet
+@media (#{$bp-lg}) {}
+
+// Larger than desktop
+@media (#{$bp-xl}) {}
+
+// Larger than Desktop HD
+@media (#{$bp-xx}) {}
+
+
+// Colors
+$light-grey: #0A3039 !default;
+$dark-grey: #0A3039 !default;
+$primary-color: #0A3039 !default;
+$secondary-color: #0A3039 !default;
+$border-color: #0A3039 !default;
+$link-color: #0A3039 !default;
+$font-color: #0A3039 !default;
+
+$teal: #78C7B7 !default;
+$teal-light: #BEF6EB !default;
+$teal-dark: #78C7B7 !default;
+
+$orange: #F28242 !default;
+$orange-light: #FBC2A1 !default;
+$orange-dark: #F28242 !default;
+
+$blue: #499CD6 !default;
+$blue-light: #B5E1FF !default;
+$blue-dark: #499CD6 !default;
+
+$red: #E54E58 !default;
+$red-light: #F0B3B7 !default;
+$red-dark: #E54E58 !default;
+
+$purple: #908FC6 !default;
+$purple-light: #BAB9DD !default;
+$purple-dark: #908FC6 !default;
+
+$lime: #BABA3E !default;
+$lime-light: #D8D884 !default;
+$lime-dark: #BABA3E !default;
+
+$white: #ffffff !default;
+
+// Typography
+$font-family: 'News Gothic', Arial, sans-serif !default;
+
+//Grid Variables
+//$container-width: 960px !default;
+//$container-width-larger-than-mobile: 85% !default;
+//$container-width-larger-than-phablet: 80% !default;
+//$total-columns: 12 !default;
+//$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+//$column-margin: 4% !default; // space between columns
+
+// Misc
+$global-radius: 0px !default;
+
+

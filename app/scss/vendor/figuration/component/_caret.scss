@@ -1,0 +1,6 @@
+.caret {
+    @include caret(down, $caret-width);
+}
+.open .caret {
+    @include caret-up($caret-width);
+}
