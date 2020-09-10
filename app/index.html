@@ -3,326 +3,231 @@
 	<head>
 		<meta charset="utf-8">
 		<title>marksuarez.xyz</title>
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="description" content="Mark Suarez - Portfolio">
+		<meta name="author" content="Mark Suarez">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
 	</head>
 
 	<body>
+
 		<header>
 			<div class='container'>
 				<div class='row'>
 					<div class='col-xs-12'>
-						<h1><a href='/'>marksuarez.xyz</a></h1>
+						<div class='header-inner'>
+							<div class='header-left'>
+								<a href='index.html'>
+									<div>Mark Suarez</div>
+									<div>Front-End-Developer</div>
+									<div>Product Designer</div>
+								</a>
+							</div>
+							<div class='header-right'>
+								<nav>
+									<ul>
+										<li>
+											<a href='index.html'>Projects</a>
+										</li>
+										<li>
+											<a href='cv.html'>CV</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
 					</div>
 				</div>		
 			</div>
 		</header>
+
+
+
+
+
+
 		<main>
 
-			<aside>
+			<!-- Project List -->
+			<section class='projects'>
 				<div class='container'>
-					<h2>info</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie. Mauris malesuada nisi sit amet augue.</p>
-					<h2>contact</h2>
-					<a href='mailto: mark.a.suarez@gmail.com'>mark.a.suarez@gmail.com</a>
-				</div>
-			</aside>
-
-			<section>
-				<div class='container'>
-					<div>
-						<div>
-							<h2>developed sites</h2>
-							<div class='cards'>
-
-								<div class='card'>
-									<h3>
-										<a href='https://dsai.ca' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>frontier.is
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>bridgeable.com
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>originalvoices.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-							</div>
+					<div class='row'>
+						<div class='col-xs-12'>
+							<!-- <div class='heading'>
+								<h1>Projects</h1>
+							</div> -->
+							<ul class='items'>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://dsai.ca'>Diamond Schmitt Architects</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+										<li class='tag'>WebGL</li>
+										<li class='tag'>ScrollMagic</li>
+										<li class='tag'>GSAP</li>
+										<li class='tag'>mixitup</li>
+										<li class='tag'>with Frontier</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://frontier.is'>Frontier</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+										<li class='tag'>ScrollMagic</li>
+										<li class='tag'>GSAP</li>
+										<li class='tag'>DrawSVG</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://willful.co'>Willful.co</a>
+									<ul class='tags'>
+										<li class='tag'>Webflow</li>
+										<li class='tag'>CMS</li>
+										<li class='tag'>Swiftype</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://cbc.ca/originalvoices'>CBC Original Voices</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+										<li class='tag'>SVG</li>
+										<li class='tag'>Parallax</li>
+										<li class='tag'>Open Graph API</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://wepiecetogether.com'>Piece Together</a>
+									<ul class='tags'>
+										<li class='tag'>WordPress</li>
+										<li class='tag'>WooCommerce</li>
+										<li class='tag'>Lottie</li>
+										<li class='tag'>BodyMovin</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://keygordon.com'>Key Gordon</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://bridgeable.com'>Bridgeable</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+										<li class='tag'>ScrollMagic</li>
+										<li class='tag'>GSAP</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://futurestarters.org'>Futurestarters</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+										<li class='tag'>ScrollMagic</li>
+										<li class='tag'>GSAP</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://fogoislandinn.ca'>Fogo Island Inn</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='http://infiniteperspectives.ryerson.ca/'>Ryerson FEAS - Infinite Perspectives</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+										<li class='tag'>Barba</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://w-financial.com'>W Financial</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://peregrineinv.com/'>Peregrine Investment Management</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://gryphonsecure.com/'>Gryphon</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+										<li class='tag'>SVG</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://investeco.com/'>InvestEco</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://toupee.ltd'>Toupee</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+										<li class='tag'>Html5 video</li>
+									</ul>
+								</li>
+								<li class='item' data-thumbnail='https://via.placeholder.com/1440x900'>
+									<a href='https://karimjeeresolutions.com'>Karimjee Resolutions Inc.</a>
+									<ul class='tags'>
+										<li class='tag'>Development</li>
+										<li class='tag'>WordPress</li>
+									</ul>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section>
-				<div class='container'>
-					<div>
-						<div>
-							<h2>personal projects</h2>
-							<div class='cards'>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class='container'>
-					<div>
-						<div>
-							<h2>reading list</h2>
-							<div class='cards'>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-								<div class='card'>
-									<h3>
-										<a href='' target='_new'>dsai.ca
-											<span style='content: url(svg/external.svg)'></span>
-										</a>
-									</h3>
-									<div class='tags'>
-										<div>webGL</div>
-										<div>scrollMagic</div>
-										<div>GSAP</div>
-									</div>
-									<p>In February 2018, Eilish embarked on the Where's My Mind Tour, which concluded in April 2018.</p>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<!-- END Project List -->
 
 		</main>
+
+
+
+
+
+
 		<footer>
-			<div>
+			<div class='container'>
+				<div class='row'>
+					<div class='col-xs-12'>
+						<div class='footer-inner'>
+							<div class='footer-left'>
+								<a href='mailto:mark.a.suarez@gmail.com'>mark.a.suarez@gmail.com</a>
+							</div>
+							<div class='footer-right'>
+								<a href='index.html'>marksuarez.xyz</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</footer>
+
+
+
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src='js/main.js'></script>
 	</body>

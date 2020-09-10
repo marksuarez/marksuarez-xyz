@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
     <title>external</title>
-    <desc>Created with Sketch.</desc>
+    <desc></desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="web" transform="translate(-366.000000, -264.000000)" fill-rule="nonzero">
             <g id="external" transform="translate(367.000000, 264.000000)">
-                <polygon id="Path" stroke="#008BFF" stroke-width="2" fill="#FFFFFF" points="-2.93098879e-14 7.036 11.964 7.036 11.964 19 -2.93098879e-14 19"></polygon>
-                <polygon id="Path" fill="#008BFF" points="8.53 2.30926389e-14 19 2.30926389e-14 19 10.78 15.854 13.874 13.234 11.254 7.786 16.7 2.406 11.324 8.026 5.708 5.4 3.088"></polygon>
-                <polygon id="Path" fill="#FFFFFF" points="16.99 2.008 17.034 11.778 13.4 8.14 7.64 13.9 5.18 11.446 10.944 5.686 7.244 1.982"></polygon>
+                <polygon id="Path" stroke="#0054FF" stroke-width="2" fill="#F1F3F2" points="-2.93098879e-14 7.036 11.964 7.036 11.964 19 -2.93098879e-14 19"></polygon>
+                <polygon id="Path" fill="#0054FF" points="8.53 2.30926389e-14 19 2.30926389e-14 19 10.78 15.854 13.874 13.234 11.254 7.786 16.7 2.406 11.324 8.026 5.708 5.4 3.088"></polygon>
+                <polygon id="Path" fill="#F1F3F2" points="16.99 2.008 17.034 11.778 13.4 8.14 7.64 13.9 5.18 11.446 10.944 5.686 7.244 1.982"></polygon>
             </g>
         </g>
     </g>

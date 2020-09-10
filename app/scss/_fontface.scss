@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Styrene';
+  font-family: 'StyreneA';
   src: url('../webfonts/StyreneA-Regular-Reduced.eot'); /* IE9 Compat Modes */
   src: url('../webfonts/StyreneA-Regular-Reduced.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
         url('../webfonts/StyreneA-Regular-Reduced.woff') format('woff'), /* Modern Browsers */
@@ -11,7 +11,7 @@
   }
 
 @font-face {
-  font-family: 'Styrene';
+  font-family: 'StyreneA';
   src: url('../webfonts/StyreneA-RegularItalic-Reduced.eot'); /* IE9 Compat Modes */
   src: url('../webfonts/StyreneA-RegularItalic-Reduced.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
         url('../webfonts/StyreneA-RegularItalic-Reduced.woff') format('woff'), /* Modern Browsers */
@@ -23,7 +23,7 @@
   }
 
 @font-face {
-  font-family: 'Styrene';
+  font-family: 'StyreneA';
   src: url('../webfonts/StyreneA-Medium-Reduced.eot'); /* IE9 Compat Modes */
   src: url('../webfonts/StyreneA-Medium-Reduced.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
         url('../webfonts/StyreneA-Medium-Reduced.woff') format('woff'), /* Modern Browsers */
@@ -35,7 +35,7 @@
   }
 
 @font-face {
-  font-family: 'Styrene';
+  font-family: 'StyreneA';
   src: url('../webfonts/StyreneA-MediumItalic-Reduced.eot'); /* IE9 Compat Modes */
   src: url('../webfonts/StyreneA-MediumItalic-Reduced.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
         url('../webfonts/StyreneA-MediumItalic-Reduced.woff') format('woff'), /* Modern Browsers */
@@ -44,4 +44,53 @@
         url('../webfonts/StyreneA-MediumItalic-Reduced.svg#wf')  format('svg');
         font-style: italic;
         font-weight: 500;
-  }  
+  }
+
+
+@font-face {
+  font-family: 'StyreneB';
+  src: url('../webfonts/StyreneB-Regular-Cy-Web.eot'); /* IE9 Compat Modes */
+  src: url('../webfonts/StyreneB-Regular-Cy-Web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../webfonts/StyreneB-Regular-Cy-Web.woff') format('woff'), /* Modern Browsers */
+        url('../webfonts/StyreneB-Regular-Cy-Web.woff2') format('woff2'), /* Modern Browsers */
+        url('../webfonts/StyreneB-Regular-Cy-Web.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../webfonts/StyreneB-Regular-Cy-Web.svg#wf')  format('svg');
+        font-style: normal;
+        font-weight: 400;
+  }
+
+@font-face {
+  font-family: 'StyreneB';
+  src: url('../webfonts/StyreneB-RegularItalic-Cy-Web.eot'); /* IE9 Compat Modes */
+  src: url('../webfonts/StyreneB-RegularItalic-Cy-Web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../webfonts/StyreneB-RegularItalic-Cy-Web.woff') format('woff'), /* Modern Browsers */
+        url('../webfonts/StyreneB-RegularItalic-Cy-Web.woff2') format('woff2'), /* Modern Browsers */
+        url('../webfonts/StyreneB-RegularItalic-Cy-Web.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../webfonts/StyreneB-RegularItalic-Cy-Web.svg#wf')  format('svg');
+        font-style: italic;
+        font-weight: 400;
+  }
+
+@font-face {
+  font-family: 'StyreneB';
+  src: url('../webfonts/StyreneB-Medium-Cy-Web.eot'); /* IE9 Compat Modes */
+  src: url('../webfonts/StyreneB-Medium-Cy-Web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../webfonts/StyreneB-Medium-Cy-Web.woff') format('woff'), /* Modern Browsers */
+        url('../webfonts/StyreneB-Medium-Cy-Web.woff2') format('woff2'), /* Modern Browsers */
+        url('../webfonts/StyreneB-Medium-Cy-Web.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../webfonts/StyreneB-Medium-Cy-Web.svg#wf')  format('svg');
+        font-style: normal;
+        font-weight: 500;
+  }
+
+@font-face {
+  font-family: 'StyreneB';
+  src: url('../webfonts/StyreneB-MediumItalic-Cy-Web.eot'); /* IE9 Compat Modes */
+  src: url('../webfonts/StyreneB-MediumItalic-Cy-Web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../webfonts/StyreneB-MediumItalic-Cy-Web.woff') format('woff'), /* Modern Browsers */
+        url('../webfonts/StyreneB-MediumItalic-Cy-Web.woff2') format('woff2'), /* Modern Browsers */
+        url('../webfonts/StyreneB-MediumItalic-Cy-Web.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../webfonts/StyreneB-MediumItalic-Cy-Web.svg#wf')  format('svg');
+        font-style: italic;
+        font-weight: 500;
+  }      

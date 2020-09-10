@@ -1,9 +1,13 @@
 $(document).ready(function(){ 
-	$(document).on('click', function(e){
-		$('aside').css({"transform":"translateX(90%)"});
-	});
-	$('aside').on('click', function(e){
-		$(this).css({"transform":"translateX(0%)"});
-		e.stopPropagation();
+	$('.projects .item').each(function(e){
+		var thumb = $(this).data('thumbnail');
+		$(this).hover(
+			function(e){
+				// $(this).css('cursor','👉');
+			}, function(e){
+				
+			}
+		);
+		
 	});
 });

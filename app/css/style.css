@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Styrene';
+  font-family: 'StyreneA';
   src: url("../webfonts/StyreneA-Regular-Reduced.eot");
   /* IE9 Compat Modes */
   src: url("../webfonts/StyreneA-Regular-Reduced.eot?#iefix") format("embedded-opentype"), url("../webfonts/StyreneA-Regular-Reduced.woff") format("woff"), url("../webfonts/StyreneA-Regular-Reduced.woff2") format("woff2"), url("../webfonts/StyreneA-Regular-Reduced.ttf") format("truetype"), url("../webfonts/StyreneA-Regular-Reduced.svg#wf") format("svg");
@@ -7,7 +7,7 @@
   font-weight: 400; }
 
 @font-face {
-  font-family: 'Styrene';
+  font-family: 'StyreneA';
   src: url("../webfonts/StyreneA-RegularItalic-Reduced.eot");
   /* IE9 Compat Modes */
   src: url("../webfonts/StyreneA-RegularItalic-Reduced.eot?#iefix") format("embedded-opentype"), url("../webfonts/StyreneA-RegularItalic-Reduced.woff") format("woff"), url("../webfonts/StyreneA-RegularItalic-Reduced.woff2") format("woff2"), url("../webfonts/StyreneA-RegularItalic-Reduced.ttf") format("truetype"), url("../webfonts/StyreneA-RegularItalic-Reduced.svg#wf") format("svg");
@@ -15,7 +15,7 @@
   font-weight: 400; }
 
 @font-face {
-  font-family: 'Styrene';
+  font-family: 'StyreneA';
   src: url("../webfonts/StyreneA-Medium-Reduced.eot");
   /* IE9 Compat Modes */
   src: url("../webfonts/StyreneA-Medium-Reduced.eot?#iefix") format("embedded-opentype"), url("../webfonts/StyreneA-Medium-Reduced.woff") format("woff"), url("../webfonts/StyreneA-Medium-Reduced.woff2") format("woff2"), url("../webfonts/StyreneA-Medium-Reduced.ttf") format("truetype"), url("../webfonts/StyreneA-Medium-Reduced.svg#wf") format("svg");
@@ -23,10 +23,42 @@
   font-weight: 500; }
 
 @font-face {
-  font-family: 'Styrene';
+  font-family: 'StyreneA';
   src: url("../webfonts/StyreneA-MediumItalic-Reduced.eot");
   /* IE9 Compat Modes */
   src: url("../webfonts/StyreneA-MediumItalic-Reduced.eot?#iefix") format("embedded-opentype"), url("../webfonts/StyreneA-MediumItalic-Reduced.woff") format("woff"), url("../webfonts/StyreneA-MediumItalic-Reduced.woff2") format("woff2"), url("../webfonts/StyreneA-MediumItalic-Reduced.ttf") format("truetype"), url("../webfonts/StyreneA-MediumItalic-Reduced.svg#wf") format("svg");
+  font-style: italic;
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'StyreneB';
+  src: url("../webfonts/StyreneB-Regular-Cy-Web.eot");
+  /* IE9 Compat Modes */
+  src: url("../webfonts/StyreneB-Regular-Cy-Web.eot?#iefix") format("embedded-opentype"), url("../webfonts/StyreneB-Regular-Cy-Web.woff") format("woff"), url("../webfonts/StyreneB-Regular-Cy-Web.woff2") format("woff2"), url("../webfonts/StyreneB-Regular-Cy-Web.ttf") format("truetype"), url("../webfonts/StyreneB-Regular-Cy-Web.svg#wf") format("svg");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'StyreneB';
+  src: url("../webfonts/StyreneB-RegularItalic-Cy-Web.eot");
+  /* IE9 Compat Modes */
+  src: url("../webfonts/StyreneB-RegularItalic-Cy-Web.eot?#iefix") format("embedded-opentype"), url("../webfonts/StyreneB-RegularItalic-Cy-Web.woff") format("woff"), url("../webfonts/StyreneB-RegularItalic-Cy-Web.woff2") format("woff2"), url("../webfonts/StyreneB-RegularItalic-Cy-Web.ttf") format("truetype"), url("../webfonts/StyreneB-RegularItalic-Cy-Web.svg#wf") format("svg");
+  font-style: italic;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'StyreneB';
+  src: url("../webfonts/StyreneB-Medium-Cy-Web.eot");
+  /* IE9 Compat Modes */
+  src: url("../webfonts/StyreneB-Medium-Cy-Web.eot?#iefix") format("embedded-opentype"), url("../webfonts/StyreneB-Medium-Cy-Web.woff") format("woff"), url("../webfonts/StyreneB-Medium-Cy-Web.woff2") format("woff2"), url("../webfonts/StyreneB-Medium-Cy-Web.ttf") format("truetype"), url("../webfonts/StyreneB-Medium-Cy-Web.svg#wf") format("svg");
+  font-style: normal;
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'StyreneB';
+  src: url("../webfonts/StyreneB-MediumItalic-Cy-Web.eot");
+  /* IE9 Compat Modes */
+  src: url("../webfonts/StyreneB-MediumItalic-Cy-Web.eot?#iefix") format("embedded-opentype"), url("../webfonts/StyreneB-MediumItalic-Cy-Web.woff") format("woff"), url("../webfonts/StyreneB-MediumItalic-Cy-Web.woff2") format("woff2"), url("../webfonts/StyreneB-MediumItalic-Cy-Web.ttf") format("truetype"), url("../webfonts/StyreneB-MediumItalic-Cy-Web.svg#wf") format("svg");
   font-style: italic;
   font-weight: 500; }
 
@@ -1894,94 +1926,211 @@ body {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   color: #394041;
-  font-family: "Styrene", sans-serif; }
+  font-family: "StyreneA", sans-serif;
+  font-size: 16px;
+  line-height: 1.25em;
+  overflow-x: hidden; }
+
+@media (min-width: 48em) {
+  body {
+    font-size: 18px;
+    line-height: 1.25em; } }
 
 .container {
   margin: 0px auto;
-  max-width: 1000px; }
+  padding: 0 20px;
+  max-width: 840px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  margin: 0; }
-
-h1 {
-  margin: 80px 0;
-  font-size: 43px;
+  font-weight: 500;
   line-height: 1em; }
-  h1 a {
-    color: #394041;
-    text-decoration: none; }
-    h1 a:hover {
-      border-radius: 2px;
-      background: #ffffff;
-      box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff; }
-
-h2 {
-  margin: 0 0 30px 0;
-  font-size: 16px;
-  line-height: 1em;
-  font-style: italic; }
-
-h3 {
-  margin: 12px 0;
-  font-size: 30px;
-  line-height: 1em; }
-
-p {
-  margin: 12px 0;
-  font-size: 12px;
-  line-height: 1.4em;
-  font-style: italic; }
 
 a {
-  color: #008BFF;
-  text-decoration: none; }
+  transition: .1s ease-in;
+  color: #0054FF; }
+  a:hover, a:active, a:focus {
+    color: #FF5D5D; }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -40px; }
-  .cards .card {
-    padding: 20px 40px 20px;
-    box-sizing: border-box;
-    width: calc(100%/3);
-    transition: box-shadow .25s ease-out; }
-    .cards .card:hover {
-      border-radius: 2px;
-      background: #ffffff;
-      box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff; }
-
-.tags {
-  margin: 12px 0;
-  font-size: 12px;
+header {
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 500;
-  line-height: 1em;
-  display: flex;
-  flex-wrap: wrap; }
-  .tags div {
-    background-color: #FF5D5D;
-    color: #FFFFFF;
-    border-radius: 100px;
-    padding: 5px 12px 4px 12px;
-    margin: 0 4px 0 0; }
+  background-color: #fff;
+  padding: 40px 0; }
+  header a {
+    color: #394041; }
+  header .header-inner {
+    display: flex;
+    justify-content: space-between; }
+    header .header-inner .header-left {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      header .header-inner .header-left a {
+        text-decoration: none; }
+    header .header-inner .header-right nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      header .header-inner .header-right nav ul li {
+        display: block;
+        margin: 0;
+        padding: 0; }
+        header .header-inner .header-right nav ul li a {
+          text-decoration: none; }
 
-section {
-  margin: 0 0 50px 0; }
+@media (min-width: 48em) {
+  header {
+    font-size: 24px;
+    line-height: 30px; } }
 
-aside {
-  display: none;
-  transition: -webkit-transform .05s ease-in-out;
-  transition: transform .05s ease-in-out;
-  transition: transform .05s ease-in-out, -webkit-transform .05s ease-in-out;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100vh;
-  background-color: #394041;
-  color: #008BFF;
-  box-shadow: -20px -20px 60px #d9d9d9, 20px 20px 60px #ffffff;
-  -webkit-transform: translateX(90%);
-          transform: translateX(90%); }
+footer {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  background-color: #fff;
+  padding: 40px 0; }
+  footer a {
+    color: #394041;
+    text-decoration: none; }
+  footer .footer-inner {
+    display: flex;
+    justify-content: space-between; }
+
+@media (min-width: 48em) {
+  footer {
+    font-size: 24px;
+    line-height: 30px; } }
+
+main {
+  padding: 110px 0;
+  background-color: #F1F3F2; }
+
+section.projects .items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: auto; }
+  section.projects .items .item {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0; }
+    section.projects .items .item a {
+      display: block;
+      text-decoration: none; }
+      section.projects .items .item a::before {
+        content: url("/svg/external.svg");
+        position: absolute;
+        margin-left: -40px;
+        margin-top: -4px; }
+      section.projects .items .item a:hover, section.projects .items .item a:active, section.projects .items .item a:focus {
+        color: #FF5D5D; }
+    section.projects .items .item .tags {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      height: 16px;
+      width: auto;
+      margin-left: 20px; }
+      section.projects .items .item .tags .tag {
+        display: block;
+        background-color: #FFFFFF;
+        font-size: 8px;
+        line-height: 9px;
+        padding: 3px 6px 2px;
+        margin: 1px;
+        border-radius: 2px; }
+        section.projects .items .item .tags .tag:before {
+          content: '';
+          position: relative;
+          margin-right: 0px; }
+
+@media (min-width: 48em) {
+  section.projects .items .item {
+    font-size: 36px;
+    line-height: 54px; }
+    section.projects .items .item .tags {
+      height: 32px; } }
+
+section .heading h1 a {
+  color: #0054FF;
+  text-decoration: none; }
+  section .heading h1 a:before {
+    content: '#';
+    position: absolute;
+    margin-left: -40px; }
+  section .heading h1 a:hover, section .heading h1 a:active, section .heading h1 a:focus {
+    color: #FF5D5D; }
+
+section .items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  section .items .item {
+    padding: 0;
+    margin: 0;
+    margin: 40px 0; }
+    section .items .item h1 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px; }
+      section .items .item h1 a {
+        text-decoration: none; }
+        section .items .item h1 a:before {
+          content: url("/svg/external.svg");
+          position: absolute;
+          margin-left: -40px;
+          margin-top: -2px; }
+        section .items .item h1 a:hover, section .items .item h1 a:active, section .items .item h1 a:focus {
+          color: #FF5D5D; }
+    section .items .item h2 {
+      font-family: "StyreneB", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px; }
+    section .items .item p {
+      font-family: "StyreneB", sans-serif;
+      font-size: 16px;
+      line-height: 24px; }
+    section .items .item ul, section .items .item ol {
+      font-family: "StyreneB", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      section .items .item ul li, section .items .item ol li {
+        padding: 0;
+        margin: 0; }
+        section .items .item ul li:before, section .items .item ol li:before {
+          content: '+';
+          position: relative;
+          margin-right: 10px; }
+
+@media (min-width: 48em) {
+  section .items .item {
+    margin: 60px 0; }
+    section .items .item h1 {
+      font-size: 24px;
+      line-height: 24px; }
+    section .items .item h2 {
+      font-size: 20px;
+      line-height: 30px; }
+    section .items .item p {
+      font-size: 20px;
+      line-height: 30px; }
+    section .items .item ul, section .items .item ol {
+      font-size: 18px;
+      line-height: 29px; } }
 
 /*# sourceMappingURL=maps/style.css.map */
